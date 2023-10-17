@@ -78,7 +78,7 @@ sarsop_policy(pomdp) = EnsureParticleCount(solve(SARSOPSolver(), pomdp), BestCur
 
 # combine policies into a list
 policies = [scen7_pol, scen11_pol, scen13_pol, all_policy, random_policy, sarsop_policy] # onestepgreedy_policy
-policy_names = ["Scenario 7"] # , "Scenario 11", "Scenario 13", "Observe-All Policy", "Random Policy", "SARSOP Policy", "One-Step Greedy Policy"
+policy_names = ["Scenario 7", "Scenario 11", "Scenario 13", "Observe-All Policy", "Random Policy"] # , "SARSOP Policy", "One-Step Greedy Policy"
 
 # Evaluate the policies on the test set 
 policy_results = [] # <---- Uncomment this block to evaluate the policies
